@@ -1,0 +1,126 @@
+#datePickerContainer *{
+    cursor: auto;
+}
+#datePickerContainer a {
+    cursor: pointer;
+}
+#datePickerContainer input {
+    cursor: pointer;
+}
+#datePickerContainer button{
+    cursor: pointer;
+}
+#datePickerContainer .modal-dialog * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root{
+    --litepicker-day-width: 1.8em;
+}
+#datePickerContainer .litepicker {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.6em;
+    display: none
+}
+#datePickerContainer .litepicker .container__days>div,
+#datePickerContainer .litepicker .container__days>a {
+    padding: 4px 0; 
+    /* padding around */
+    width: var(--litepicker-day-width)
+}
+
+#datePickerContainer .litepicker .container__tooltip {
+    position: absolute;
+    margin-top: -34px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--litepicker-tooltip-color-bg);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    font-size: 11px;
+    pointer-events: none;
+    visibility: hidden
+}
+
+#datePickerContainer .day-item.is-in-range {
+    cursor: pointer !important;
+}
+#datePickerContainer .day-item.is-end-date {
+    cursor: grabbing !important;
+}
+
+#datePickerContainer .datepickerBox{
+    /* width: 100%;
+    height: 100%; */
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: white;
+    position: relative;
+    z-index: 10000;
+    cursor: auto;
+}
+#datePickerContainer .datepickerBox > *{
+    cursor: auto;
+}
+
+#datePickerContainer .container__predefined-ranges {
+    
+    font-weight: normal;
+    font-size: .8em;
+    border: 0px solid #fff;
+}
+#datePickerContainer .container__predefined-ranges button{
+    
+    font-weight: normal;
+    font-size: 1em;
+    border: 0px solid #fff;
+}
+#datePickerContainer .container__predefined-ranges.show {
+    display:block;
+}
+
+#datePickerContainer .container__predefined-ranges.show button{
+    display:block;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    
+}
+#datePickerContainer .container__predefined-ranges.show button:hover{
+    background-color: #007bff;
+    color: white;
+  
+}
+
+/* bacnet override styles */
+
+#datePickerContainer .dropdown-item{
+    width: fit-content;
+  }
+
+  #datePickerContainer .modal-content{
+    width: fit-content;
+}
+#datePickerContainer .modal-body {
+    padding: 0;
+    margin: 5vh;
+}
+#datePickerContainer .label {
+    /* font-size: .8em; */
+    padding-bottom: 10px;
+}
+#datePickerContainer #settings-push {
+    display: block;
+    width: fit-content;
+    margin-top:5vh;
+    margin-left:5vh;
+    background-color: white;
+    color:black;
+}
+#datePickerContainer {
+    margin: auto;
+    margin-top: 10vh;
+}
